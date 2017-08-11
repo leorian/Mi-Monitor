@@ -23,7 +23,7 @@ import java.util.List;
  * Created by xiezg@317hu.com on 2017/8/11 0011.
  */
 @RestController
-@RequestMapping("miRest")
+@RequestMapping("mi")
 public class MiRestController {
     static {
         try {
