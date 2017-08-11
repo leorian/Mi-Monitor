@@ -178,7 +178,7 @@
                             var insistServiceMethodParameterDOList;
                             for (var i = 0; i < serviceMethodArray.length; i++) {
                                 if (serviceMethodArray[i].simpleMethodName == methodName) {
-                                    insistServiceMethodParameterDOList = serviceMethodArray[i].insistServiceMethodParameterDOList;
+                                    insistServiceMethodParameterDOList = serviceMethodArray[i].miServiceMethodParameterDOList;
                                     break;
                                 }
                             }
