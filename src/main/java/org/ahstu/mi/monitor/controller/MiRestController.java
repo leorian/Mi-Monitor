@@ -6,6 +6,7 @@ import org.ahstu.mi.consumer.MiConsumerMeta;
 import org.ahstu.mi.module.ServiceMeta;
 import org.ahstu.mi.monitor.enums.ImanagerErrorEnum;
 import org.ahstu.mi.monitor.util.ImanagerUtil;
+import org.ahstu.mi.monitor.util.PropertyUtil;
 import org.ahstu.mi.monitor.util.ResultMessageBuilder;
 import org.ahstu.mi.zk.MiZkClient;
 import org.apache.zookeeper.KeeperException;
@@ -27,7 +28,7 @@ import java.util.List;
 public class MiRestController {
     static {
         try {
-            MiZkClient.getInstance().connect("172.16.150.151:2181,172.16.150.151:2182,172.16.150.151:2183");
+            MiZkClient.getInstance().connect(PropertyUtil.getProperty("application.zkHosts"));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
