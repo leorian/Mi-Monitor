@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<body>
-	Date: ${time?date}
-	<br>
-	Time: ${time?time}
-	<br>
-	Message: ${message}
-</body>
-
-</html>
+<script language="javascript" type="text/javascript">
+    window.location.href='${ctxPath}/monitor/provider';
+</script>
